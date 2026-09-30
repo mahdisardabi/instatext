@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InstaText — Instagram Content Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <span class="badge">Open Source</span>
+      <h1>InstaText</h1>
+      <p>ابزار ساده برای آماده‌سازی کپشن و هشتگ اینستاگرام</p>
+    </header>
+
+    <section class="card">
+      <label for="topic">موضوع پست</label>
+      <input id="topic" type="text" placeholder="مثلاً طبیعت، سفر، غذا، خودرو...">
+
+      <label for="tone">لحن</label>
+      <select id="tone">
+        <option value="friendly">صمیمی</option>
+        <option value="professional">حرفه‌ای</option>
+        <option value="short">کوتاه و مینیمال</option>
+        <option value="story">روایت‌محور</option>
+      </select>
+
+      <div class="actions">
+        <button id="generate">ساخت کپشن</button>
+        <button id="format" class="secondary">راست‌چین و مرتب‌سازی متن</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <label for="caption">کپشن</label>
+      <textarea id="caption" rows="8" placeholder="کپشن اینجا نمایش داده می‌شود..."></textarea>
+
+      <div class="actions">
+        <button id="copyCaption" class="secondary">کپی کپشن</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <label>هشتگ‌های پیشنهادی</label>
+      <div id="hashtags" class="hashtags">—</div>
+      <div class="actions">
+        <button id="copyHashtags" class="secondary">کپی هشتگ‌ها</button>
+      </div>
+    </section>
+
+    <footer>
+      <span>InstaText — Persian/English Instagram content helper</span>
+      <span>Free & Open Source</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
